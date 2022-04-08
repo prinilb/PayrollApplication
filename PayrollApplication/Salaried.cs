@@ -7,14 +7,12 @@ namespace PayrollApplication
     class Salaried : IEmployeeType
     {
         public double pay;
-        int weeklyRate;
         public Salaried(int weeklyRate)
         {
-            weeklyRate = weeklyRate;
+            pay = weeklyRate;
         }
         public double Pay()
         {
-            pay = weeklyRate;
             return pay;
         }
     }

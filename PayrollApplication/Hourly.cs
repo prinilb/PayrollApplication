@@ -7,17 +7,14 @@ namespace PayrollApplication
     class Hourly : IEmployeeType
     {
         public double pay;
-        public int hoursWorked;
-        public double hourlyRate;
+
         public Hourly(int hoursWorked, double hourlyRate)
         {
-            hoursWorked = hoursWorked;
-            hourlyRate = hourlyRate;
+            pay = hourlyRate * hoursWorked;
         }
 
         public double Pay()
         {
-            pay = hourlyRate * hoursWorked;
             return pay;
         }
     }
